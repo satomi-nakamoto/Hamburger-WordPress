@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+//front-page
+
+.frontPage-header, header {
+  .u-menu-btn {   
+    border-style: hidden;
+  }
+  //Menuを押したときの線を消す
+  .u-menu-btn:active {
+    outline: none;
+  }
+}
+
+.u-branchMenu > li {
+  list-style-type: none;
+  padding: 0;
+}
+
+//sidebar
+
+.sidebar {
+  & ul>li {
+    list-style-type: none;
+  }
+
+  .u-menu-btn-close {
+    border: none;
+
+    &:active {
+      outline: none;
+    }
+  }
+}
+
+//category
+
+.u-detail__btn:focus {
+outline: 0;
+}
+
+//single
+
+.u-list > ul {
+  list-style-type: none;
+}
+
+//search
+
+.u-mainArea-list {
+  list-style-type: none;
+}

@@ -1,0 +1,51 @@
+.p-sidebar {
+  z-index: 10;
+  display: none;
+
+  @include pc {
+    display: block;
+  }
+
+  .u-menu {
+    padding-left: 50px;
+    padding-top: 60px;
+    display: none;
+
+    @include pc {
+      display: block;
+    }
+  }
+
+  .p-hamburgerMenu {
+    width: 330px;
+    height: 100%;
+    position: relative;
+
+    .p-menu-contents {
+      position: absolute;
+      top: 150px;
+    }
+
+    & ul:first-child {
+      padding-top: 50px;
+    }
+
+    & ul>li {
+      list-style-type: none;
+      font-size: 20px;
+      font-weight: 100;
+      padding-left: 43px;
+      padding-top: 20px;
+      padding-bottom: 15px;
+    }
+  
+  }
+}
+
+.is-open.sidebar {
+  display: block;
+}
+
+.sub-menu:nth-of-type(1){
+ padding-top: 10px;
+}

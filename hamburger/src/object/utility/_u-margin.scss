@@ -1,0 +1,170 @@
+@charset "UTF-8";
+
+//****共通
+
+// header {
+//   margin-top: -46px;  //アドミンバーがない場合
+// }
+
+aside {
+  margin-top: -40px; //アドミンバーがない場合
+  padding-bottom: 40px; //アドミンバーがない場合
+
+  @include pc {
+    margin-bottom: 0px;
+    padding-bottom: 0px; //アドミンバーがない場合
+  }
+}
+
+.u-header__title {
+  @include pc {
+    margin-left: 25px;
+  }
+}
+
+//****フロントページ
+
+.frontPage-header {
+  .u-menu-btn {
+    margin-top: 15px;
+  }
+}
+
+.u-search-form {
+  margin-left: 10px;
+
+  @include pc {
+    margin-bottom: -8px;
+  }
+}
+
+.u-search-box {
+  margin-right: 10px;
+}
+
+.u-branchMenu {
+  & h2 {
+    margin-bottom: 200px;
+  }
+}
+
+//sidebar
+
+.sidebar {
+   
+  .u-hamburgerMenu {
+    margin-left: calc(100vw - 328px);
+ 
+    @include ssp {
+      margin-left: 50px;
+    }
+
+    @include pc {
+      margin-left: 0px;
+    }
+  }
+
+  & h3 {
+    padding-left: 50px;
+    margin: 20px 0;
+  }
+}
+
+.menu-category-menu-container {
+  // margin-right: calc(var(--side) * -1);
+  .menu {
+     margin-top: 40px;
+  }
+}
+
+
+//category他共通
+
+.u-category__header,
+.u-search__header,
+.u-main__header,
+.u-shopMain__header {
+  margin: 0 calc(var(--side) * -1);
+}
+
+//category
+
+.u-category__nav {
+
+  @include tab {
+    margin-bottom: 30px;
+  }
+
+}
+
+//single 
+
+#single {
+  .postNavi-sp {
+    margin-top: 30px;
+  }
+  .postNavi {
+   margin-top: 60px;
+   margin-bottom: 20px;
+  }
+}
+
+.u-main__detailed {
+
+  h2 {
+    margin: 40px 0;
+  }
+
+  p {
+    margin-bottom: 40px;
+  }
+}
+
+//single. page
+
+.u-main__header,
+.u-shopMain__header {
+
+  h1 {
+    margin-left: var(--side);
+  }
+}
+
+//page
+
+.u-titleH {
+  margin-bottom: 20px;
+}
+
+.u-blockquote {
+  margin-bottom: 40px;
+}
+
+table {
+  margin: 40px 0;
+}
+
+.wp-block-preformatted {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.listblock {
+  margin-top: 40px;
+  margin-left: var(--side);
+}
+
+code {
+  margin-top: 20px;
+}
+
+//search
+
+.imgArea {
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.navigation {
+  margin-top: 50px;
+}

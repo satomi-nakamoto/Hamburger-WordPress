@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+//フロントページ
+
+.p-frontPage__sub {
+  display: block;
+  position: relative;
+  padding: 0;
+}
+
+.p-frontPage__sub h2 {
+  position: absolute;
+  left: 22px;
+  top: 45%;
+  z-index: 10;
+  height: 100%;
+
+  @include tab {
+  left: 50px;
+  }
+}
+

@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+.l-frontPage__header-head {
+  height: 217px;
+} //フロントページのみ
+
+.l-common__header {
+  height: 217px; 
+} //他のページ共通
+
+.l-frontPage__section {
+  height: 691px;
+}
+
+.l-footer {
+  height: 150px;
+  z-index: 1;
+}
+
+
+ 

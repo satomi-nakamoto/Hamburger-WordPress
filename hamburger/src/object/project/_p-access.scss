@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+//フロントページ
+
+.p-access {
+  position: relative;
+
+  @include pc {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  & p {
+    @include pc {
+      width: 44%;
+      z-index: 2;
+    }
+  }
+
+  &::before {
+    @include pc {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 55%;
+      height: 415px;
+    }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 691px;
+
+    @include tab {
+      display: none;
+    }
+
+    @include pc {
+      display: block;
+      width: auto;
+      height: 415px;
+    }
+  }
+}

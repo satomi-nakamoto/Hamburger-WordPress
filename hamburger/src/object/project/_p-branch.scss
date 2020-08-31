@@ -1,0 +1,39 @@
+//フロントページ
+
+.p-branchMenu {
+
+  & h2 {
+    padding-top: 30px;
+    padding-left: 10px;
+  }
+
+  .detailed {
+    width: 100%;
+    height: 163px;
+
+    @include tab {
+      width: auto;
+    }
+  }
+
+  .title {
+    padding-top: 23px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+  }
+
+  .text {
+    padding: 10px;
+  }
+
+  & li {
+    height: 100%;
+    padding-top: 1.9%;
+  }
+
+  @include pc {
+    display: grid;
+    height: auto;
+    padding-top: 1.9%;
+  }
+}

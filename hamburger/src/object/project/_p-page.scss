@@ -1,0 +1,25 @@
+.p-shopMain__header {
+  height: 225px;
+
+  h1 {
+    align-self: center;
+  }
+
+  @include tab {
+    height: 350px;
+  }
+
+  @include pc {
+    height: 480px;
+  }
+}
+
+.wp-block-pullquote {
+  p {
+    padding: 15px; 
+  }
+}
+
+.wp-block-preformatted {
+  justify-self: start;
+}

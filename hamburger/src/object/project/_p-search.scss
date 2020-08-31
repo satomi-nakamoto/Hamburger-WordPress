@@ -1,0 +1,29 @@
+.p-search__header {
+  height: 283px;
+
+  @include tab {
+    position: relative;
+  }
+
+  & h1 {
+    padding-top: 120px;
+    padding-left: 30px;
+
+    @include tab {
+      padding-top: 110px;
+      padding-left: 60px;
+    }
+  }
+
+  & p {
+    padding-top: 15px;
+    padding-left: 30px;
+
+    @include tab {
+      position: absolute;
+      top: 125px;
+      left: 250px;
+    }
+  }
+}
+

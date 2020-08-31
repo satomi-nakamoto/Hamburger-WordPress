@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+//フロントページ
+
+form {
+  width: 520px;
+  height: 46px;
+
+  @include pc {
+    width: 310px;
+    height: 35px;
+    padding-top: 5px;
+  }
+
+  @include wide {
+    width: 542px;
+    height: 46px;
+  }
+}
+
+.p-search-box {
+  width: 230px;
+  height: 46px;
+  border-radius: 8px;
+  border: 1px solid #707070;
+  outline-style: none;
+
+  @include tab {
+    width: 340px;
+  }
+
+  @include pc {
+    width: 230px;
+    height: 35px;
+  }
+
+  @include wide {
+    width: 350px;
+    height: 46px;
+  }
+}
+
+.p-search-btn {
+  width: 70px;
+  height: 46px;
+  border-radius: 8px;
+  border: 1px solid #707070;
+  opacity: 0.7;
+  outline-style: none;
+
+  @include tab {
+    width: 136px;
+  }
+
+  @include pc {
+    width: 60px;
+    height: 35px;
+  }
+
+  @include wide {
+    width: 136px;
+    height: 46px;
+  }
+}
+
+.p-search-box {
+text-indent: 4em;
+}
+
+
+//YATさんのブログより抜粋
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  white-space: nowrap;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000; /* Above WP toolbar. */
+}

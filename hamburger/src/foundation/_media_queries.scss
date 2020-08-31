@@ -1,0 +1,38 @@
+@charset "UTF-8"; 
+
+$ssp: 360px;  // ミニスマホ
+$tab: 640px; // タブレット
+$tabL: 840px; //タブレット大
+$pc: 1024px; // PC 
+$wide: 1510px; //大画面PC
+
+@mixin ssp {
+  @media (max-width: ($ssp)) {
+    @content;
+  }
+}
+
+@mixin tab {
+  @media (min-width: ($tab)) {
+    @content;
+  }
+}
+
+@mixin tabL {
+  @media (min-width: ($tabL)) {
+    @content;
+  }
+}
+
+@mixin pc {
+  @media (min-width: ($pc)) {
+    @content;
+  }
+}
+
+@mixin wide {
+  @media (min-width: ($wide)) {
+    @content;
+  }
+}
+

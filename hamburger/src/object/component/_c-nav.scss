@@ -1,0 +1,187 @@
+//sp用のナビ
+
+.c-category__ul {
+  padding-bottom: 20px;
+
+  & span.nextPage {
+    float: right;
+    text-decoration: none;
+  }
+
+  & span.prevPage {
+    float: left;
+    text-decoration: none;
+  }
+
+  @include tab {
+    display: none;
+  }
+}
+
+.c-number__nav {
+  display: none;
+
+  @include tab {
+    display: block;
+    margin:0 auto;
+  }
+}
+
+
+//categoryメニューページのナビ
+
+.post-nav-links,
+.post-nav-links {
+  font-size: 13px;
+
+  & a,
+  & span {
+    color: #f08a2a;
+    background-color: #FFFFFF;
+    padding: 10px 15px;
+    margin: 0 auto;
+    display: inline-block;
+    white-space: nowrap;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+    text-align: center;
+    text-decoration: none;
+    border: thin dotted #f08a2a;
+  }
+}
+
+.post-nav-links a:hover {
+  color: #fff;
+  background-color:#f08a2a;
+}
+
+.post-nav-links span.current {
+  color: #fff;
+  background-color: #f08a2a;
+}
+
+.wp-pagenavi {
+  align-self: start;
+  justify-self: center;
+}
+
+
+//single投稿ベージのナビ
+
+.nav-links {
+
+  a:link,
+  a:hover,
+  a:visited,
+  a:active {
+    color: #fff;
+    background-color: #78d1d4;
+    padding: 8px 15px;
+    margin: 0 4px;
+    white-space: nowrap;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+    text-align: center;
+    text-decoration: none;
+    border: thin dotted #fff;
+  }
+
+  .nav-previous {
+    & a {
+      float: left;
+    }
+  }
+
+  .nav-next {
+    & a {
+      float: right;
+    }
+  }
+
+}
+
+.postNavi-sp {
+
+  @include tab {
+    display: none;
+  }
+}
+
+.postNavi {
+  display: none;
+
+  @include tab {
+    display: block;
+  }
+}
+
+//searchページのナビ
+
+.navigation {
+  display: grid;
+  padding-bottom: 20px;
+
+    .leftNav {
+    justify-self: start;
+    margin-bottom: -30px;
+
+    @include tab {
+      display: none;
+    }
+  }
+
+  .rightNav {
+    justify-self: end;
+
+    @include tab {
+      display: none;
+    }
+  }
+}
+
+.wp-pageNavi {
+  display: none;
+
+  @include tab {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    justify-self: center;
+  }
+ 
+ 
+
+  & a,
+  & span {
+    color: #4DD0D5;
+    background-color: #FFFFFF;
+    padding: 8px 15px;
+    margin: 0 auto;
+    display: inline-block;
+    white-space: nowrap;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+    text-align: center;
+    text-decoration: none;
+    border: thin dotted #4DD0D5;
+  }
+
+  a:hover {
+    color: #fff;
+    background-color: #4DD0D5;
+  }
+
+  span.current {
+    color: #fff;
+    background-color: #4DD0D5;
+  }
+}
+
+
+

@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+//基本
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+//フロントページ
+.hero-img {
+  z-index: -1;
+
+  .c-hero {
+    height: 100%;
+    object-fit: cover;
+
+    @include tab {
+      display: none;
+    }
+  }
+
+  .c-heroBig {
+    display: none;
+
+    @include tab {
+      display: block;
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+}
+
+.branch-img {
+
+  .takeOut-big-img {
+    display: none;
+
+    @include tab {
+      display: block;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .eatIn-img {
+    height: 100%;
+    object-fit: cover;
+
+    @include tab {
+      display: none;
+    }
+  }
+
+  .eatIn-big-img {
+    display: none;
+
+    @include tab {
+      display: block;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+//category
+
+.wp-block-media-text__media {
+
+  @include tab {
+    min-width: 384px;
+  }
+}
+
+//search
+
+.imgArea a img{
+  max-height: 300px;
+  display: block;
+  // margin: 0 auto;
+  object-fit: cover;
+}
+
+//page
+
+.size-m {
+  display: block;
+  margin: 0 auto;
+}
+
+//single
+#single {
+  .aligncenter {
+  display: block;
+  margin: 0 auto;
+}
+
+.alignleft {
+  float: left;
+}
+
+.alignright {
+  float: right;
+}
+}

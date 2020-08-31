@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+body {
+  margin: 0;
+  font-family: 'Roboto', 'M PLUS 1p', sans-serif;
+  background-color: #fffdfa;
+  // color: #3C2A10;
+  // background-color: #fffefc;
+  color: #707070;
+  min-width: 360px;
+  max-width: 1920px;
+  box-sizing: border-box;
+
+  a:link,
+  a:visited,
+  a:active {
+    color: #707070;
+    text-decoration: none;
+  }
+
+  a:hover {
+    filter: brightness(0.75);
+    opacity:0.7;
+    color: lightcoral;
+}
+
+
+  //テキストの自動拡大を無効化
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}

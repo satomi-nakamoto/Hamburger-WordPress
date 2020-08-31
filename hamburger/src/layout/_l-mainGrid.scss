@@ -1,0 +1,360 @@
+//*******フロントページの主要グリッド
+
+.l-frontPage__wrap {
+
+  --side: 30px;
+  display: grid;
+  grid-template: repeat(4, auto) / 1fr;
+
+  @include pc {
+    display: grid;
+    grid-template: repeat(4, auto) / 1fr auto;
+    grid-template-areas: "header aside"
+      "article aside"
+      "section aside"
+      "footer footer";
+  }
+
+  header {
+    grid-row: 1;
+    grid-column: 1;
+
+    @include pc {
+      grid-area: header;
+    }
+  }
+
+  article {
+    grid-row: 2;
+    grid-column: 1;
+
+    @include pc {
+      grid-area: article;
+    }
+  }
+
+  & section {
+    grid-row: 3;
+    grid-column: 1;
+
+    @include pc {
+      grid-area: section;
+    }
+  }
+
+  & footer {
+    grid-row: 4;
+    grid-column: 1;
+
+    @include pc {
+      grid-area: footer;
+    }
+  }
+
+  & aside {
+    grid-row: 1/-1;
+    grid-column: 1;
+
+    @include pc {
+      grid-area: aside;
+    }
+  }
+
+}
+
+
+//**.フロントページl-frontPage__header-head、以降ページ.l-common__headerのグリッド
+
+.l-frontPage__header-head,
+.l-common__header {
+
+  display: grid;
+  grid-template: 50px auto 40px auto 40px / var(--side) repeat(6, 1fr) var(--side);
+
+  @include pc {
+    display: grid;
+    grid-template: auto / repeat(8, 1fr);
+  }
+
+  .l-header__title,
+  .l-logo {
+    grid-row: 2;
+    grid-column: 1/-1;
+    justify-self: center;
+
+    @include pc {
+      grid-row: 1;
+      grid-column: 1/5;
+      align-self: center;
+    }
+  }
+
+  .l-search-form {
+    grid-row: 4;
+    grid-column: 2/-2;
+
+    @include tab {
+      grid-row: 4;
+      grid-column: 3/7;
+    }
+
+    @include pc {
+      grid-row: 1;
+      grid-column: -1/span 4;
+      align-self: center;
+    }
+  }
+
+  .l-menu,
+  .l-menu-btn {
+    grid-row: 1;
+    grid-column: 7;
+  }
+
+}
+
+
+//WP***category主要グリッド
+
+.l-category__wrap {
+  --side: 30px;
+  display: grid;
+  grid-template: repeat(4, auto) / var(--side) 1fr var(--side);
+
+  @include pc {
+    display: grid;
+    grid-template: repeat(4, auto) / 1fr auto;
+    grid-template-areas: "header aside"
+      "article aside"
+      "nav aside"
+      "footer footer";
+  }
+
+  header {
+    grid-row: 1;
+    grid-column: 1/-1;
+
+    @include pc {
+      grid-area: header;
+    }
+  }
+
+  article {
+    grid-row: 2;
+    grid-column: 2;
+
+    @include pc {
+      grid-area: article;
+    }
+  }
+
+  nav {
+    grid-row: 3;
+    grid-column: 2;
+
+    @include pc {
+      grid-area: nav;
+    }
+  }
+
+  footer {
+    grid-row: 4;
+    grid-column: 1/-1;
+
+    @include pc {
+      grid-area: footer;
+    }
+  }
+
+  aside {
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+
+    @include pc {
+      grid-area: aside;
+    }
+  }
+
+}
+
+//WP****page主要グリッド
+
+.l-page__wrap {
+
+  --side: 30px;
+  display: grid;
+  grid-template: repeat(3, auto) / var(--side) 1fr var(--side);
+
+  @include pc {
+
+    --side: 50px;
+    display: grid;
+    grid-template: repeat(3, auto) / var(--side) 1fr var(--side) auto;
+    grid-template-areas: 
+      "header header header aside"
+      "..... main ..... aside"
+      "footer footer footer footer";
+  }
+
+  header {
+    grid-row: 1;
+    grid-column: 1/-1;
+
+    @include pc {
+      grid-area: header;
+    }
+  }
+
+  main.l-main {
+    grid-row: 2;
+    grid-column: 2;
+
+    @include pc {
+      grid-area: main;
+    }
+  }
+
+  .l-footer {
+    grid-row: 3;
+    grid-column: 1/-1;
+
+    @include pc {
+      grid-area: footer;
+    }
+  }
+
+  aside {
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+
+    @include pc {
+      grid-area: aside;
+    }
+  }
+
+}
+
+//WP****single(投稿ページ)主要グリッド
+
+.l-single__wrap {
+
+  --side: 30px;
+  display: grid;
+  grid-template: repeat(4, auto) / var(--side) 1fr var(--side);
+
+  @include pc {
+
+    --side: 50px;
+    display: grid;
+    grid-template: repeat(4, auto) / var(--side) 1fr var(--side) auto;
+    grid-template-areas: 
+      "header header header aside"
+      "..... main ..... aside"
+      "..... nav ..... aside"
+      "footer footer footer footer";
+  }
+
+  header {
+    grid-row: 1;
+    grid-column: 1/-1;
+
+    @include pc {
+      grid-area: header;
+    }
+  }
+
+  main.l-main {
+    grid-row: 2;
+    grid-column: 2;
+
+    @include pc {
+      grid-area: main;
+    }
+  }
+
+  nav {
+    grid-row: 3;
+    grid-column: 2;
+
+    @include pc {
+      grid-area: nav;
+    }
+  }
+
+  .l-footer {
+    grid-row: 4;
+    grid-column: 1/-1;
+
+    @include pc {
+      grid-area: footer;
+    }
+  }
+
+  aside {
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+
+    @include pc {
+      grid-area: aside;
+    }
+  }
+
+}
+
+//WP****serachの主要グリッド
+
+.l-category-search__wrap {
+  --side: 30px;
+  display: grid;
+  grid-template: repeat(3, auto) / var(--side) 1fr var(--side);
+
+  @include pc {
+    display: grid;
+    grid-template: 217px auto 1fr / 1fr auto;
+    grid-template-areas: "header aside"
+      "article aside"
+      "footer footer";
+  }
+
+  header {
+    grid-row: 1;
+    grid-column: 1/-1;
+
+    @include pc {
+      grid-area: header;
+    }
+  }
+
+  article {
+    grid-row: 2;
+    grid-column: 2;
+
+    @include pc {
+      grid-area: article;
+    }
+  }
+
+  footer {
+    grid-row: 3;
+    grid-column: 1/-1;
+
+    @include pc {
+      grid-area: footer;
+    }
+  }
+
+  aside {
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+
+    @include pc {
+      grid-area: aside;
+    }
+  }
+
+}
+
+
+
+
+

@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+//page
+
+table {
+  border-collapse: collapse;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+td {
+  border: 1px solid #3C2A10;
+  height: 77px;
+  padding-left: 20px;
+  line-height: 77px;
+
+  &:first-of-type {
+    width: 40%;
+  }
+}
+
+tr {
+
+  .p-s {
+    width: 40%;
+  }
+
+  .p-l {
+    width: 60%;
+  }
+}
